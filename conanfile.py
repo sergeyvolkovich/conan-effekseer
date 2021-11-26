@@ -45,7 +45,7 @@ class EffekseerConan(ConanFile):
             }
 
         if self.settings.os == "Windows":
-            options.USE_MSVC_RUNTIME_LIBRARY_DLL = "MD" in self.settings.compiler.runtime
+            options['USE_MSVC_RUNTIME_LIBRARY_DLL'] = "MD" in self.settings.compiler.runtime
 
         cmake.configure(source_folder="source_subfolder", build_folder="build_subfolder", defs=options)
         cmake.build()
