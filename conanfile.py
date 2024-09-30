@@ -4,7 +4,7 @@ import os
 
 class EffekseerConan(ConanFile):
     name            = "effekseer"
-    version         = "161e"
+    version         = "170e"
     description     = "Conan package for Effekseer runtime."
     url             = "https://github.com/effekseer/Effekseer"
     license         = "MIT"
